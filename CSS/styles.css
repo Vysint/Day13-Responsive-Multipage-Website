@@ -258,3 +258,52 @@ section#products article:last-child .image{
 section#products a:hover{
   text-decoration: underline;
 }
+
+/* --------WHY CHOOSE US ------- */
+section#why-choose-us .container .head{
+  display: flex;
+  justify-content: space-between;
+}
+section#why-choose-us .container .head .left h4{
+  font-style: italic;
+}
+section#why-choose-us .container .head .right{
+  display: flex;
+  gap: 2rem;
+  width: 16rem;
+}
+section#why-choose-us .container .head .right .image{
+  width: 8rem;
+}
+section#why-choose-us .container .head .right h4{
+  margin-top: 1rem;
+  color: var(--color-black);
+  font-weight: 700;
+}
+section#why-choose-us .container article{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+  margin-top: 6rem;
+}
+section#why-choose-us .container article h4{
+margin-bottom: 1.4rem;
+color: var(--color-black);
+font-weight: 700;
+}
+section#why-choose-us .container article p{
+  margin-bottom: 1rem;
+}
+section#why-choose-us .container article a{
+  display: inline-block;
+  margin-top: 1rem;
+}
+section#why-choose-us .container article a img{
+  width: 8rem;
+  transition: all 300ms ease;
+}
+
+section#why-choose-us .container article a:hover img{
+  filter: saturate(0);
+}
