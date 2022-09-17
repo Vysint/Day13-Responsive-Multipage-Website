@@ -405,3 +405,33 @@ section#faqs a.btn{
   width: 12rem;
   text-align: center;
 }
+
+/* -----CTA---- */
+section#cta .container{
+  background: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  border-radius: 2rem;
+  position: relative;
+  height: 20rem;
+}
+section#cta .container .info{
+  width: 26rem;
+}
+section#cta .container .info h3{
+  margin-bottom: 1rem;
+  color: var(--color-white);
+}
+section#cta .container .info p{
+  color: var(--color-light);
+}
+section#cta .container .image{
+  position: absolute;
+  top: -4rem;
+  right: 35%;
+}
+section#cta .container .btn{
+  align-self: flex-end;
+}
