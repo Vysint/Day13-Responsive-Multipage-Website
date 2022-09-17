@@ -363,3 +363,45 @@ section#trusted-clients .clients{
 .swiper-pagination-bullet{
   background: var(--color-primary);
 }
+
+/* -----FAQS------ */
+section#faqs h2{
+  text-align: center;
+  margin-bottom: 5rem;
+}
+section#faqs .content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+section#faqs article{
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1.4rem;
+  height: fit-content;
+  background: var(--color-primary);
+  cursor: pointer;
+}
+section#faqs .content article h4{
+  color: #fff;
+  font-size: 1rem;
+}
+section#faqs .content article i{
+  color: #fff;
+  font-size: 1.2rem;
+}
+section#faqs .content article p {
+  margin-top: 1rem;
+  color: var(--color-light);
+  display: none;
+}
+section#faqs .content article.open p{
+  display: block;
+}
+section#faqs a.btn{
+  display: block;
+  margin: 1.6rem auto 0;
+  width: 12rem;
+  text-align: center;
+}
