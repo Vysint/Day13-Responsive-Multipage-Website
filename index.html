@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css"
     />
-
     <!-- ------GOOGLE FONTS---- -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +22,11 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
+    />
+    <!-- ----SWIPERJS CDN---- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
     <!-- -----CUSTOM STYLESHEET----- -->
     <link rel="stylesheet" href="CSS/styles.css" />
@@ -166,7 +170,7 @@
               bronzer, and see the difference. Bronzer face seems the smart way
               to add glamour to your otherwise simplistic look.
             </p>
-            <a href="#"><img src="images/learn more.png" alt=""></a>
+            <a href="#"><img src="images/learn more.png" alt="" /></a>
           </div>
         </article>
       </div>
@@ -177,15 +181,84 @@
       <div class="container">
         <h4>Some of our trusted clients</h4>
         <div class="clients">
-          <div><img src="images/client1.png"></div>
-          <div><img src="images/client2.png"></div>
-          <div><img src="images/client3.png"></div>
-          <div><img src="images/client4.png"></div>
-          <div><img src="images/client5.png"></div>
-          <div><img src="images/client6.png"></div>
+          <div><img src="images/client1.png" /></div>
+          <div><img src="images/client2.png" /></div>
+          <div><img src="images/client3.png" /></div>
+          <div><img src="images/client4.png" /></div>
+          <div><img src="images/client5.png" /></div>
+          <div><img src="images/client6.png" /></div>
         </div>
       </div>
     </section>
     <!-- ------END OF TRUSTED CLIENTS----- -->
+    <section class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <article class="swiper-slide">
+          <div class="image">
+            <img src="./images/testimonial1.png" />
+          </div>
+          <div class="details">
+            <h4>Customer Story</h4>
+            <h2>Quick and best results. You are the best!</h2>
+            <p>
+              “If you are going to use a passage of Lorem Ipsum, you need to be
+              sure there isn't anything embarrassing hidden in the middle of
+              text.
+            </p>
+            <p>
+              There are many variations of passages of Lorem Ipsum available.”
+            </p>
+            <h5>Mary Danso</h5>
+            <small>Marketing Manager</small>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <div class="image">
+            <img src="./images/testimonial2.png" />
+          </div>
+          <div class="details">
+            <h4>Customer Story</h4>
+            <h2>Works Magic. Love the smell as well!</h2>
+            <p>
+              “If you are going to use a passage of Lorem Ipsum, you need to be
+              sure there isn't anything embarrassing hidden in the middle of
+              text.
+            </p>
+            <p>
+              There are many variations of passages of Lorem Ipsum available.”
+            </p>
+            <h5>Ernest Achiever</h5>
+            <small>Hand Model</small>
+          </div>
+        </article>
+
+        <article class="swiper-slide">
+          <div class="image">
+            <img src="./images/testimonial3.png" />
+          </div>
+          <div class="details">
+            <h4>Customer Story</h4>
+            <h2>Very affordable and reliable. Love it!</h2>
+            <p>
+              “If you are going to use a passage of Lorem Ipsum, you need to be
+              sure there isn't anything embarrassing hidden in the middle of
+              text.
+            </p>
+            <p>
+              There are many variations of passages of Lorem Ipsum available.”
+            </p>
+            <h5>Rebecca Daniels</h5>
+            <small>Student</small>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- -----END OF TESTIMONIALS--- -->
+    <!-- ------SWIPERJS CDN----- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
   </body>
 </html>
