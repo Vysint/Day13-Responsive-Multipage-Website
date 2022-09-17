@@ -18,6 +18,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -120,6 +121,8 @@ nav {
   place-items: center;
   position: fixed;
   z-index: 2;
+  background: #fff;
+  box-shadow: 0 1rem 1rem rgba(0,0,0,0.1);
 }
 nav button {
   display: none;
@@ -227,4 +230,31 @@ section#commercial .container{
 }
 section#commercial .container video{
   width: 100%;
+}
+
+/* ------PRODUCTS------ */
+section#products .container{
+  width: 56%;
+}
+section#products .container > h2,
+section#products .container > p{
+  text-align: center;
+}
+section#products article{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-top: 5rem;
+}
+section#products article p{
+  margin: 1.5rem 0 1rem;
+}
+section#products article:last-child{
+  grid-template-columns: 60% 40%;
+}
+section#products article:last-child .image{
+  margin-right: -8rem;
+}
+section#products a:hover{
+  text-decoration: underline;
 }
