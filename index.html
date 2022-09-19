@@ -403,14 +403,23 @@
         </div>
         <div class="f4">
           <h4>Contact Us</h4>
-          <p>
-            +254 720 000 000
-            support@vintage.com
-          </p>
+          <p>+254 720 000 000 support@vintage.com</p>
           <ul class="socials">
-            <li><a href="https://instagram.com" target="_blank"><i class="uil uil-instagram-alt"></i></a></li>
-            <li><a href="https://facebook.com" target="_blank"><i class="uil uil-facebook"></i></a></li>
-            <li><a href="https://twitter.com" target="_blank"><i class="uil uil-twitter"></i></a></li>
+            <li>
+              <a href="https://instagram.com" target="_blank"
+                ><i class="uil uil-instagram-alt"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="uil uil-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://twitter.com" target="_blank"
+                ><i class="uil uil-twitter"></i
+              ></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -422,5 +431,20 @@
     <!-- ------SWIPERJS CDN----- -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="JS/main.js"></script>
+    <script>
+      // open video play
+      const showCommercialBtn = document.querySelector("#show-commercial-btn");
+      const commercial = document.querySelector("#commercial");
+      showCommercialBtn.addEventListener("click", () => {
+        commercial.style.display = "grid";
+      });
+
+      // close video
+      document.body.addEventListener("click", (e) => {
+        if (e.target.id === "commercial") {
+          commercial.style.display = "none";
+        }
+      });
+    </script>
   </body>
 </html>
