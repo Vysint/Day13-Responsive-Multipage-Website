@@ -515,3 +515,125 @@ footer .copyright{
   border-top: 1px solid var(--color-light);
 }
 
+
+/* ----------MEDIA QUAERIES (TABLETS)---------- */
+@media screen and (max-width: 1024px){
+  h1{
+    font-size: 4.4rem;
+    letter-spacing: 1px;
+  }
+  h2{
+    font-size: 2.7rem;
+    letter-spacing: -1px;
+  }
+  h3{
+    font-size: 2.2rem;
+  }
+  h4{
+    font-size: 1.2rem;
+  }
+  h5{
+    font-size: 0.9rem;
+  }
+  p{
+    line-height: 1.6rem;
+    font-size: 0.9rem ;
+  }
+  .container{
+    width: var(--mobile-width);
+  }
+  section{
+    overflow-x: hidden;
+  }
+
+  /* ---------NAVBAR---- */
+  nav .container{
+    width: 100%;
+  }
+  nav .container .logo{
+    margin-left: 1rem;
+  }
+  nav .container ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 16rem;
+    height: 100vh;
+    background: var(--color-primary);
+    box-shadow: 1rem 0 2rem rgba(0,0,0,0.2);
+    z-index: 3;
+    display: none;
+  }
+  nav .container ul li{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+  }
+  nav .container ul li a{
+    width: 100%;
+    padding: 0 0 1rem 2rem;
+  }
+  nav .container ul li a:hover{
+    padding-left: 3rem;
+  }
+  nav button{
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    color: var(--color-black);
+    margin-right: 2rem;
+    font-size: 1.6rem;
+  }
+  nav button#close-btn{
+    display: none;
+  }
+
+  /* ------HEADER------ */
+
+  header{
+    top: 7rem;
+    height: 100%;
+  }
+  header .container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-top: 0;
+  }
+  header .container .details{
+    display: none;
+  }
+
+  /* ----PRODUCTS---- */
+  section#products .container{
+    width: var(--mobile-width);
+  }
+  /* -----FAQS---- */
+  section#faqs h2{
+    margin-bottom: 3rem;
+  }
+  section#faqs .content{
+    grid-template-columns: 1fr;
+  }
+  section#faqs .content article{
+    padding: 1.5rem;
+  }
+  /* -----CTA------ */
+  section#cta .container{
+    padding:4rem 2rem;
+  }
+  section#cta .info{
+    width: 56%;
+    align-self: flex-start;
+  }
+  section#cta .image{
+    position: absolute;
+    right: 11rem;
+  }
+  section#cta .container .btn{
+    z-index: 1;
+  }
+  footer .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
