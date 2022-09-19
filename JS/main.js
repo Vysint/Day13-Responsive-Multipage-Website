@@ -58,11 +58,19 @@ faqs.forEach((faq) => {
 
     // change icon
 
-    const icon = faq.querySelector('.icon i');
-    if (icon.className === 'uil uil-plus'){
-      icon.className = 'uil uil-minus';
-    }else {
-      icon.className = 'uil uil-plus';
+    const icon = faq.querySelector(".icon i");
+    if (icon.className === "uil uil-plus") {
+      icon.className = "uil uil-minus";
+    } else {
+      icon.className = "uil uil-plus";
     }
   });
+});
+
+// change navbar style om scroll
+
+window.addEventListener("scroll", () => {
+  document
+    .querySelector("nav")
+    .classList.toggle("window-scroll", window.scrollY > 0);
 });
