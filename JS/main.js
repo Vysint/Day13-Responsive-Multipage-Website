@@ -48,3 +48,21 @@ navItems.forEach((item) => {
     link.classList.add("active");
   });
 });
+
+// show/hide FQS
+const faqs = document.querySelectorAll("section#faqs article");
+
+faqs.forEach((faq) => {
+  faq.addEventListener("click", () => {
+    faq.classList.toggle("open");
+
+    // change icon
+
+    const icon = faq.querySelector('.icon i');
+    if (icon.className === 'uil uil-plus'){
+      icon.className = 'uil uil-minus';
+    }else {
+      icon.className = 'uil uil-plus';
+    }
+  });
+});
